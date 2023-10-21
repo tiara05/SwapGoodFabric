@@ -60,6 +60,12 @@
                             </div>
                             <button class="btn btn-primary btn-block" type="submit">@lang('auth.log_title')</button>
                         </form>
+                        <div class="justify-content-center align-items-center d-flex">
+                            <a href="{{ '/auth/redirect'}}" class="btn btn-google">
+                                <i class="fab fa-google"></i> Login with Google
+                            </a>
+                        </div>
+
                         <hr>
                         <div class="text-center">
                             <a href="{{ url('register') }}">@lang('auth.register_link')</a>
