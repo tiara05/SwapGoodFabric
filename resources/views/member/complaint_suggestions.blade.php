@@ -96,6 +96,7 @@
                                         <th>Tipe</th>
                                         <th>Isi</th>
                                         <th>Balasan</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -120,6 +121,9 @@
                                                     {{ $complaintSuggestion->reply }}
                                                 </td>
                                             @endif
+                                            <td>
+                                            <a href="{{ route('member.complaints.delete', ['id' => $complaintSuggestion->id]) }}" class="btn btn-danger">Hapus</a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
